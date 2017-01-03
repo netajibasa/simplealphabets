@@ -40,20 +40,20 @@ def processRequest(req):
     #data = json.loads(result)
     #res = makeWebhookResult(data)
     #return res
-	result = req.get("result")
-    parameters = result.get("parameters")
-    city = parameters.get("geo-city")
+	#result = req.get("result")
+    #parameters = result.get("parameters")
+    #city = parameters.get("geo-city")
 	
-	speech = "Today in " + location.get('city') + ": UNKNOWN" 
+	#speech = "Today in " + location.get('city') + ": UNKNOWN" 
 	print("Response:")
-    print(speech)
+    #print(speech)
 
     return {
-        "speech": speech,
-        "displayText": speech,
+        "speech": "This is just for testing",
+        "displayText": "This is just for testing",
         # "data": data,
         # "contextOut": [],
-        "source": "apiai-weather-webhook-sample"
+        "source": "test"
     }
 
 def makeYqlQuery(req):
