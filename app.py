@@ -29,32 +29,18 @@ def webhook():
 
 
 def processRequest(req):
-    #if req.get("result").get("action") != "yahooWeatherForecast":
-    #    return {}
-    #baseurl = "https://query.yahooapis.com/v1/public/yql?"
-    #yql_query = makeYqlQuery(req)
-    #if yql_query is None:
-    #    return {}
-    #yql_url = baseurl + urllib.urlencode({'q': yql_query}) + "&format=json"
-    #result = urllib.urlopen(yql_url).read()
-    #data = json.loads(result)
-    #res = makeWebhookResult(data)
-    #return res
-	#result = req.get("result")
-    #parameters = result.get("parameters")
-    #city = parameters.get("geo-city")
+    if req.get("result").get("action") != "yahooWeatherForecast":
+        return {}
+    baseurl = "https://query.yahooapis.com/v1/public/yql?"
+    yql_query = makeYqlQuery(req)
+    if yql_query is None:
+        return {}
+    yql_url = baseurl + urllib.urlencode({'q': yql_query}) + "&format=json"
+    result = urllib.urlopen(yql_url).read()
+    data = json.loads(result)
+    res = makeWebhookResult(data)
+    return res
 	
-	#speech = "Today in " + location.get('city') + ": UNKNOWN" 
-	print("Response:")
-    #print(speech)
-
-    return {
-        "speech": "This is just for testing",
-        "displayText": "This is just for testing",
-        # "data": data,
-        # "contextOut": [],
-        "source": "test"
-    }
 
 def makeYqlQuery(req):
     result = req.get("result")
