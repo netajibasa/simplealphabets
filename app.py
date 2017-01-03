@@ -45,7 +45,7 @@ def processRequest(req):
     #city = parameters.get("geo-city")
 	
 	#speech = "Today in " + location.get('city') + ": UNKNOWN" 
-	print("Response:")
+	#print("Response:")
     #print(speech)
 
     return {
