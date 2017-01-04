@@ -40,20 +40,12 @@ def processRequest(req):
     #data = json.loads(result)
     #res = makeWebhookResult(data)
     #return res
-	#result = req.get("result")
-    #parameters = result.get("parameters")
-    #city = parameters.get("geo-city")
-	
-	#speech = "Today in " + location.get('city') + ": UNKNOWN" 
-	#print("Response:")
-    #print(speech)
-
     return {
-        "speech": "This is just for testing",
-        "displayText": "This is just for testing",
+        "speech": "test",
+        "displayText": "test",
         # "data": data,
         # "contextOut": [],
-        "source": "test"
+        "source": "mysource"
     }
 
 def makeYqlQuery(req):
