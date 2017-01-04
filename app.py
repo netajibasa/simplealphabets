@@ -40,7 +40,8 @@ def processRequest(req):
     #data = json.loads(result)
     #res = makeWebhookResult(data)
     #return res
-	data = getAlphabet(req)
+    data = getAlphabet(req)
+	
     return {
         "speech": "test " + data,
         "displayText": "test",
