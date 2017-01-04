@@ -49,15 +49,20 @@ def processRequest(req):
         # "contextOut": [],
         "source": "mysource"
     }
-def getAlphabet(req)
+	
+	
+def getAlphabet(req):
     result = req.get("result")
     parameters = result.get("parameters")
     alphabet = parameters.get("user-alphabet")
-	return {
+	
+    return {
         'a': 'b',
         'b': 'c',
 		'c': 'd'
     }.get(req, 'NONE') 
+	
+	
 def makeYqlQuery(req):
     result = req.get("result")
     parameters = result.get("parameters")
