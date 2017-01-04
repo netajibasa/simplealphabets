@@ -40,14 +40,23 @@ def processRequest(req):
     #data = json.loads(result)
     #res = makeWebhookResult(data)
     #return res
+	data = getAlphabet(req)
     return {
-        "speech": "test",
+        "speech": "test " + data,
         "displayText": "test",
         # "data": data,
         # "contextOut": [],
         "source": "mysource"
     }
-
+def getAlphabet(req)
+    result = req.get("result")
+    parameters = result.get("parameters")
+    alphabet = parameters.get("user-alphabet")
+	return {
+        'a': 'b',
+        'b': 'c',
+		'c': 'd'
+    }.get(req, 'NONE') 
 def makeYqlQuery(req):
     result = req.get("result")
     parameters = result.get("parameters")
