@@ -57,8 +57,14 @@ def getAlphabet(req):
     result = req.get("result")
     parameters = result.get("parameters")
     alphabet = parameters.get("user-alphabet")
-	
-    return alphabet
+    if alphabet == 'A':
+        return 'B'
+    elif alphabet == 'B':
+		return 'C'
+    else:
+        return 'none'
+
+    #return alphabet
 	
 	
 def makeYqlQuery(req):
