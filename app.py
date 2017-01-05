@@ -41,7 +41,7 @@ def processRequest(req):
     #res = makeWebhookResult(data)
     #return res
     #data = getAlphabet(req)
-    data = "hghghgh"
+    data = getAlphabet(req)
     print ("Netaji")
     print(data)
     return {
@@ -58,11 +58,7 @@ def getAlphabet(req):
     parameters = result.get("parameters")
     alphabet = parameters.get("user-alphabet")
 	
-    return {
-        'a': 'b',
-        'b': 'c',
-		'c': 'd'
-    }
+    return alphabet
 	
 	
 def makeYqlQuery(req):
