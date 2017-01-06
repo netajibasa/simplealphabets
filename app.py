@@ -45,7 +45,7 @@ def processRequest(req):
     print ("Netaji")
     print(data)
     return {
-        "speech": "test " + data,
+        "speech": data,
         "displayText": "test",
         # "data": data,
         # "contextOut": [],
