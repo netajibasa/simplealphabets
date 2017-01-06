@@ -57,7 +57,7 @@ def getAlphabet(req):
     result = req.get("result")
     parameters = result.get("parameters")
     alphabet = parameters.get("user-alphabet")
-    lowerAlphabet = alphabet.lower()
+    lowerAlphabet = alphabet.upper()
     
     if lowerAlphabet == 'A':
         return 'B'
