@@ -58,56 +58,57 @@ def getAlphabet(req):
     parameters = result.get("parameters")
     alphabet = parameters.get("user-alphabet")
     lowerAlphabet = alphabet.lower()
+    
     if lowerAlphabet == 'A':
         return 'B'
     elif lowerAlphabet == 'B':
-		return 'C'
+        return 'C'
     elif lowerAlphabet == 'C':
-		return 'D'
+        return 'D'
     elif lowerAlphabet == 'D':
-		return 'E'
+        return 'E'
     elif lowerAlphabet == 'E':
-		return 'F'
+        return 'F'
     elif lowerAlphabet == 'F':
-		return 'G'
+        return 'G'
     elif lowerAlphabet == 'G':
-		return 'H'
+        return 'H'
     elif lowerAlphabet == 'H':
-		return 'I'
+        return 'I'
     elif lowerAlphabet == 'I':
-		return 'J'
+        return 'J'
     elif lowerAlphabet == 'J':
-		return 'K'
+        return 'K'
     elif lowerAlphabet == 'K':
-		return 'L'
+        return 'L'
     elif lowerAlphabet == 'L':
-		return 'M'
+        return 'M'
     elif lowerAlphabet == 'M':
-		return 'N'
+        return 'N'
     elif lowerAlphabet == 'N':
-		return 'O'
+        return 'O'
     elif lowerAlphabet == 'O':
-		return 'P'
+        return 'P'
     elif lowerAlphabet == 'P':
-		return 'Q'
+        return 'Q'
     elif lowerAlphabet == 'Q':
-		return 'R'
+        return 'R'
     elif lowerAlphabet == 'R':
-		return 'S'
+        return 'S'
     elif lowerAlphabet == 'S':
-		return 'T'
+        return 'T'
     elif lowerAlphabet == 'T':
-		return 'U'
+        return 'U'
     elif lowerAlphabet == 'U':
-		return 'V'
+        return 'V'
     elif lowerAlphabet == 'V':
-		return 'W'
+        return 'W'
     elif lowerAlphabet == 'W':
-		return 'X'
+        return 'X'
     elif lowerAlphabet == 'Y':
-		return 'Z'
+        return 'Z'
     elif lowerAlphabet == 'Z':
-		return 'Hmm. you said the last one. Ok Ill Start C'
+        return 'Hmm. you said the last one. Ok Ill Start C'
     else:
         return 'I don't think I got it, Ok i'm saying one  B'
 
