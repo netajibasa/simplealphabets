@@ -78,11 +78,11 @@ def getAlphabet(req):
     elif lowerAlphabet == 'I':
         return 'J'
     elif lowerAlphabet == 'J':
-        return 'K'
+        return 'take mine K'
     elif lowerAlphabet == 'K':
         return 'L'
     elif lowerAlphabet == 'L':
-        return 'Ok. M'
+        return 'Ok M'
     elif lowerAlphabet == 'M':
         return 'Good N'
     elif lowerAlphabet == 'N':
@@ -90,21 +90,21 @@ def getAlphabet(req):
     elif lowerAlphabet == 'O':
         return 'P'
     elif lowerAlphabet == 'P':
-        return 'Q'
+        return 'Perfect Q'
     elif lowerAlphabet == 'Q':
         return 'R'
     elif lowerAlphabet == 'R':
-        return 'Wow! S'
+        return 'Wow S'
     elif lowerAlphabet == 'S':
-        return 'T'
+        return 'Good T'
     elif lowerAlphabet == 'T':
         return 'U'
     elif lowerAlphabet == 'U':
-        return 'V'
+        return 'Ok V'
     elif lowerAlphabet == 'V':
         return 'very good W'
     elif lowerAlphabet == 'W':
-        return 'X'
+        return 'ok X'
     elif lowerAlphabet == 'Y':
         return 'Last one. Z'
     elif lowerAlphabet == 'Z':
