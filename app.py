@@ -110,7 +110,7 @@ def getAlphabet(req):
     elif lowerAlphabet == 'Z':
         return 'Hmm. you said the last one. Ok Ill Start C'
     else:
-        return 'Hmm I did not understood. Its my turn  B'
+        return 'Hmm I did not understand. Its my turn  B'
 
     #return alphabet
 	
