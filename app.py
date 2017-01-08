@@ -60,53 +60,53 @@ def getAlphabet(req):
     lowerAlphabet = alphabet.upper()
     
     if lowerAlphabet == 'A':
-        return 'Ok Mine is B'
+        return 'B'
     elif lowerAlphabet == 'B':
-        return 'Mine is C'
+        return 'C'
     elif lowerAlphabet == 'C':
-        return 'Good it is D'
+        return 'D'
     elif lowerAlphabet == 'D':
         return 'E'
     elif lowerAlphabet == 'E':
-        return 'Mine is F'
+        return 'F'
     elif lowerAlphabet == 'F':
         return 'G'
     elif lowerAlphabet == 'G':
-        return 'perfect, H'
+        return 'H'
     elif lowerAlphabet == 'H':
         return 'I'
     elif lowerAlphabet == 'I':
         return 'J'
     elif lowerAlphabet == 'J':
-        return 'take mine K'
+        return 'K'
     elif lowerAlphabet == 'K':
         return 'L'
     elif lowerAlphabet == 'L':
-        return 'Ok M'
+        return 'M'
     elif lowerAlphabet == 'M':
-        return 'Good N'
+        return 'N'
     elif lowerAlphabet == 'N':
-        return 'Here is mine O'
+        return 'O'
     elif lowerAlphabet == 'O':
         return 'P'
     elif lowerAlphabet == 'P':
-        return 'Perfect Q'
+        return 'Q'
     elif lowerAlphabet == 'Q':
         return 'R'
     elif lowerAlphabet == 'R':
-        return 'Wow S'
+        return 'S'
     elif lowerAlphabet == 'S':
-        return 'Good T'
+        return 'T'
     elif lowerAlphabet == 'T':
         return 'U'
     elif lowerAlphabet == 'U':
-        return 'Ok V'
+        return 'V'
     elif lowerAlphabet == 'V':
-        return 'very good W'
+        return 'W'
     elif lowerAlphabet == 'W':
-        return 'ok X'
+        return 'X'
     elif lowerAlphabet == 'Y':
-        return 'Last one. Z'
+        return 'Z'
     elif lowerAlphabet == 'Z':
         return 'you said the last one. Ok Ill Start C'
     else:
