@@ -64,7 +64,7 @@ def getAlphabet(req):
     elif lowerAlphabet == 'B':
         return 'C'
     elif lowerAlphabet == 'C':
-        return 'D'
+        return 'Ok Laasya D'
     elif lowerAlphabet == 'D':
         return 'E'
     elif lowerAlphabet == 'E':
@@ -72,17 +72,17 @@ def getAlphabet(req):
     elif lowerAlphabet == 'F':
         return 'G'
     elif lowerAlphabet == 'G':
-        return 'H'
+        return 'Sister Laasya Mine is H'
     elif lowerAlphabet == 'H':
         return 'I'
     elif lowerAlphabet == 'I':
         return 'J'
     elif lowerAlphabet == 'J':
-        return 'K'
+        return 'Sister Laasya K'
     elif lowerAlphabet == 'K':
         return 'L'
     elif lowerAlphabet == 'L':
-        return 'M'
+        return 'Sister Laasya Mine is M'
     elif lowerAlphabet == 'M':
         return 'N'
     elif lowerAlphabet == 'N':
@@ -90,19 +90,19 @@ def getAlphabet(req):
     elif lowerAlphabet == 'O':
         return 'P'
     elif lowerAlphabet == 'P':
-        return 'Q'
+        return 'Sister Laasya Mine is Q'
     elif lowerAlphabet == 'Q':
         return 'R'
     elif lowerAlphabet == 'R':
         return 'S'
     elif lowerAlphabet == 'S':
-        return 'T'
+        return 'Sister Laasya Mine is T'
     elif lowerAlphabet == 'T':
         return 'U'
     elif lowerAlphabet == 'U':
         return 'V'
     elif lowerAlphabet == 'V':
-        return 'W'
+        return 'Sister Laasya Mine is W'
     elif lowerAlphabet == 'W':
         return 'X'
     elif lowerAlphabet == 'Y':
