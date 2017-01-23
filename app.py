@@ -45,7 +45,7 @@ def processRequest(req):
     
     random_number = randrange(4) # from 0 to 9 and 10 is not included
     rndString = list1[random_number]
-	data = getAlphabet(req)
+    data = getAlphabet(req)
     print ("Netaji")
     print(data)
     return {
