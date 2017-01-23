@@ -120,9 +120,12 @@ def getAlphabet(req):
     elif lowerAlphabet == 'Z':
         returnValue =  'you said the last one. Ok Ill Start C'
     else:
-        return 'I did not understand. Its my turn  B'
+        returnValue = 'I did not understand. Its my turn  B'
 
-    return rndString + " " + returnValue
+    if lowerAlphabet != 'Z':
+       return rndString + " " + returnValue
+    else:
+       return returnValue
     #return alphabet
 	
 	
