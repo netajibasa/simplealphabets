@@ -42,14 +42,14 @@ def processRequest(req):
     #return res
     #data = getAlphabet(req)
     list1 = ['Give one more alphabet', 'Say one more letter', 'What is your next alphabet', 'Ok give the next alphabet']
-    
+    list2 = ['Next One ','Next is','After that ','After']
     random_number = randrange(4) # from 0 to 9 and 10 is not included
     rndString = list1[random_number]
     data = getAlphabet(req)
     print ("Netaji")
     print(data)
     return {
-        "speech": "mine is " + data + rndString,
+        "speech": data + " " +rndString,
         "displayText": "test",
         # "data": data,
         # "contextOut": [],
@@ -62,60 +62,67 @@ def getAlphabet(req):
     parameters = result.get("parameters")
     alphabet = parameters.get("user-alphabet")
     lowerAlphabet = alphabet.upper()
+    returnValue=""
+    list2 = ['Next One ','Next is','After that ']
+    random_number = randrange(3) # from 0 to 9 and 10 is not included
+    rndString = list2[random_number]
     
     if lowerAlphabet == 'A':
-        return 'B'
+        returnValue = 'B'
     elif lowerAlphabet == 'B':
-        return 'C'
+        returnValue = 'C'
     elif lowerAlphabet == 'C':
-        return 'Ok Laasya D'
+        returnValue = 'D'
     elif lowerAlphabet == 'D':
-        return 'E'
+        returnValue = 'E'
     elif lowerAlphabet == 'E':
-        return 'F'
+        returnValue = 'F'
     elif lowerAlphabet == 'F':
-        return 'G'
+        returnValue = 'G'
     elif lowerAlphabet == 'G':
-        return 'Sister Laasya Mine is H'
+        returnValue = 'H'
     elif lowerAlphabet == 'H':
-        return 'I'
+        returnValue = 'I'
     elif lowerAlphabet == 'I':
-        return 'J'
+        returnValue = 'J'
     elif lowerAlphabet == 'J':
-        return 'Sister Laasya K'
+        returnValue = 'K'
     elif lowerAlphabet == 'K':
-        return 'L'
+        returnValue = 'L'
     elif lowerAlphabet == 'L':
-        return 'Sister Laasya Mine is M'
+        returnValue = 'M'
     elif lowerAlphabet == 'M':
-        return 'N'
+        returnValue = 'N'
     elif lowerAlphabet == 'N':
-        return 'O'
+        returnValue =  'O'
     elif lowerAlphabet == 'O':
-        return 'P'
+        returnValue =  'P'
     elif lowerAlphabet == 'P':
-        return 'Sister Laasya Mine is Q'
+        returnValue =  'Q'
     elif lowerAlphabet == 'Q':
-        return 'R'
+        returnValue =  'R'
     elif lowerAlphabet == 'R':
-        return 'S'
+        returnValue =  'S'
     elif lowerAlphabet == 'S':
-        return 'Sister Laasya Mine is T'
+        returnValue =  'T'
     elif lowerAlphabet == 'T':
-        return 'U'
+        returnValue =  'U'
     elif lowerAlphabet == 'U':
-        return 'V'
+        returnValue =  'V'
     elif lowerAlphabet == 'V':
-        return 'Sister Laasya Mine is W'
+        returnValue =  'W'
     elif lowerAlphabet == 'W':
-        return 'X'
+        returnValue =  'X'
+    elif lowerAlphabet == 'X':
+        returnValue =  'Y'
     elif lowerAlphabet == 'Y':
-        return 'Z'
+        returnValue =  'Z'
     elif lowerAlphabet == 'Z':
-        return 'you said the last one. Ok Ill Start C'
+        returnValue =  'you said the last one. Ok Ill Start C'
     else:
         return 'I did not understand. Its my turn  B'
 
+    return rndString + " " + returnValue
     #return alphabet
 	
 	
