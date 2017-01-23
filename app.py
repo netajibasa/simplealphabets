@@ -41,11 +41,15 @@ def processRequest(req):
     #res = makeWebhookResult(data)
     #return res
     #data = getAlphabet(req)
-    data = getAlphabet(req)
+    list1 = ['Give one more alphabet', 'Say one more letter', 'What is your next alphabet', 'Ok give the next alphabet'];
+    from random import randrange
+    random_number = randrange(4) # from 0 to 9 and 10 is not included
+    rndString = list1[random_number]
+	data = getAlphabet(req)
     print ("Netaji")
     print(data)
     return {
-        "speech": data + ",Give one more alphabet",
+        "speech": "mine is " + data + rndString,
         "displayText": "test",
         # "data": data,
         # "contextOut": [],
