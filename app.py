@@ -7,7 +7,7 @@ import os
 from flask import Flask
 from flask import request
 from flask import make_response
-
+from random import randrange
 # Flask app should start in global layout
 app = Flask(__name__)
 
@@ -41,8 +41,8 @@ def processRequest(req):
     #res = makeWebhookResult(data)
     #return res
     #data = getAlphabet(req)
-    list1 = ['Give one more alphabet', 'Say one more letter', 'What is your next alphabet', 'Ok give the next alphabet'];
-    from random import randrange
+    list1 = ['Give one more alphabet', 'Say one more letter', 'What is your next alphabet', 'Ok give the next alphabet']
+    
     random_number = randrange(4) # from 0 to 9 and 10 is not included
     rndString = list1[random_number]
 	data = getAlphabet(req)
