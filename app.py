@@ -42,7 +42,7 @@ def processRequest(req):
     #return res
     #data = getAlphabet(req)
     list1 = ['Give one more alphabet', 'Say one more letter', 'What is your next alphabet', 'Ok give the next alphabet']
-    list2 = ['Next One ','Next is','After that ','After']
+    
     random_number = randrange(4) # from 0 to 9 and 10 is not included
     rndString = list1[random_number]
     data = getAlphabet(req)
@@ -63,8 +63,8 @@ def getAlphabet(req):
     alphabet = parameters.get("user-alphabet")
     lowerAlphabet = alphabet.upper()
     returnValue=""
-    list2 = ['Next One ','Next is','After that ']
-    random_number = randrange(3) # from 0 to 9 and 10 is not included
+    list2 = ['Next One is ','Next is ']
+    random_number = randrange(2) # from 0 to 9 and 10 is not included
     rndString = list2[random_number]
     
     if lowerAlphabet == 'A':
@@ -123,7 +123,7 @@ def getAlphabet(req):
         returnValue = 'I did not understand. I am starting with B'
 
     if lowerAlphabet != 'Z':
-       return rndString + " " + returnValue
+       return rndString + ". " + returnValue
     else:
        return returnValue
     #return alphabet
