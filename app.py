@@ -123,7 +123,7 @@ def getAlphabet(req):
         returnValue = 'I did not understand. I am starting with B'
 
     if lowerAlphabet != 'Z':
-       return rndString + ". " + returnValue
+       return rndString + " " + returnValue + "."
     else:
        return returnValue
     #return alphabet
