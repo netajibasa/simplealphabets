@@ -63,7 +63,7 @@ def getAlphabet(req):
     alphabet = parameters.get("user-alphabet")
     lowerAlphabet = alphabet.upper()
     returnValue=""
-    list2 = ['Next One is ','Next is ']
+    list2 = ['Next alphabet is ','Next letter is ']
     random_number = randrange(2) # from 0 to 9 and 10 is not included
     rndString = list2[random_number]
     
@@ -118,7 +118,7 @@ def getAlphabet(req):
     elif lowerAlphabet == 'Y':
         returnValue =  'Z'
     elif lowerAlphabet == 'Z':
-        returnValue =  'you said the last one. Ok Ill Start C'
+        returnValue =  'picked the last one. Ok Ill Start C'
     else:
         returnValue = 'I did not understand. I am starting with B'
 
